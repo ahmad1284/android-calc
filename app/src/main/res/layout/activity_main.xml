@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="5pt"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5pt"
+        >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Number: "
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="206dp"
+        android:layout_marginRight="15pt"
+        />
+
+    <EditText
+        android:id="@+id/fno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Ingiza namba ya kwanza"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="180dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Number: "
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="290dp"
+        android:layout_marginRight="10pt"
+        />
+
+    <EditText
+        android:id="@+id/sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Ingiza namba ya pili"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10pt"
+        android:layout_marginBottom="5pt"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15pt"
+            android:onClick="Add"
+            android:text="Add"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="351dp" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Sub"
+            android:text="Sub"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="351dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5pt"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15pt"
+            android:onClick="Mult"
+            android:text="Mult"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Div"
+            android:text="Div"
+            tools:layout_editor_absoluteX="206dp"
+            tools:layout_editor_absoluteY="433dp" />
+    </LinearLayout>
+</LinearLayout>
